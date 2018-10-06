@@ -18,8 +18,8 @@ float[] yValues;
 PShape[][] curves;
 
 void setup() {
-  //fullScreen(P2D);
-  size(1200, 600);
+  //fullScreen(P3D);
+  size(800, 800);
   //frameRate(40);
   //background(0);
 
@@ -95,6 +95,7 @@ void draw() {
       strokeWeight(2);
       curves[i][y].vertex(xValues[i], yValues[y]);
       curves[i][y].endShape();
+      curves[i][y].beginShape();
       shape(curves[i][y]);
     }
   }
